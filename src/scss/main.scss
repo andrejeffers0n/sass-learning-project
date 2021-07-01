@@ -1,0 +1,19 @@
+@use "modules/colors";
+@use "modules/typography";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: colors.$main-bg;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  // gap: 10px;
+  // grid-auto-rows: minmax(100px, auto);
+}
